@@ -1,10 +1,35 @@
-h1 #black {
-  color: #000;
+#header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*alinea sobre el eje principal */
+  align-items: center; /*alinea sobre el eje secundario */
+  margin-top: 10px;
+  font-family: 'Oswald', sans-serif;
 }
-
-h1 #red {
-  color: #ff0000;
+nav {
+    display: flex;
+    flex-direction:row;
 }
-h1 #green {
-  color: #089000;
-}
+nav ul li{
+    list-style: none;
+    display: inline;
+    }
+    nav ul li a{
+        padding: 15px;
+        text-decoration: none;
+        color: #333;
+        font-size: 15px;
+    }
+    nav ul li a:hover{
+        background: #e50c39;
+        color:#fff;
+        
+    }
+    .main-content h2{
+        display: flex;
+        justify-content:center ;/*alinea sobre el eje principal */
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.5rem;
+        color: #000;
+        letter-spacing: 2px; /*espacio entre caracteres */
+    }
