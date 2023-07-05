@@ -99,3 +99,11 @@ padding: 6px 6px 30px 6px;
     color:white;
     font-family: 'Work Sans', sans-serif;
 }
+footer{
+    text-align: center;
+    color:black;
+    font-size: 1rem;
+    font-family:"Oswald", sans-serif;
+    font-weight: bold;
+    
+}
