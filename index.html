@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="css/fontawesome.css" rel="stylesheet">
+  <link href="css/brands.css" rel="stylesheet">
+  <link href="css/solid.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -74,7 +77,7 @@
               <h3>Fugazzeta</h3>
               <p>$1600</p>
               <time>05/07/2023</time><br>
-              <button class="button">Comprar Ahora</button>
+              <button class="button"value="1"> Comprar Ahora <i class="fa-solid fa-cart-shopping"></i></button>
             </figcapcha>
             </img>
           </figure>
@@ -88,7 +91,7 @@
               <h3>Pizza 4 Quesos</h3>
               <p>$2300</p>
               <time>05/07/20223</time><br>
-              <button class="button">Comprar Ahora</button>
+              <button class="button"value="2"> Comprar Ahora <i class="fa-solid fa-cart-shopping"></i></button>
             </figcapcha>
             </img>
           </figure>
@@ -101,7 +104,7 @@
             <figcapcha>
               <h3>Pizza de Albahaca</h3>
               <p>$1700</p>
-              <time>05/07/2023</time><br><button class="button">Comprar Ahora</button>
+              <time>05/07/2023</time><br><button class="button"value="3">Comprar Ahora <i class="fa-solid fa-cart-shopping"></i></button>
             </figcapcha>
 
             </img>
@@ -115,7 +118,7 @@
             <figcapcha>
               <h3>Pizza de Muzzarella</h3>
               <p>$1700</p>
-              <time>05/07/2023</time><br><button class="button">Comprar Ahora</button>
+              <time>05/07/2023</time><br><button class="button"value="4">Comprar Ahora <i class="fa-solid fa-cart-shopping"></i></button>
             </figcapcha>
 
             </img>
@@ -130,7 +133,7 @@
               <h3>Pizza a la Napolitana</h3>
               <p>$1900</p>
               <time>05/07/2023</time><br>
-              <button class="button">Comprar Ahora</button>
+              <button class="button"value="5">Comprar Ahora <i class="fa-solid fa-cart-shopping"></i></button>
             </figcapcha>
 
             </img>
@@ -145,7 +148,22 @@
               <h3>Pizza de Rucula y Jamon Crudo</h3>
               <p>$2500</p>
               <time>05/07/2023</time><br>
-              <button class="button">Comprar Ahora</button>
+              <button class="button"value="6"> Comprar Ahora <i class="fa-solid fa-cart-shopping"></i></button>
+            </figcapcha>
+
+            </img>
+          </figure>
+        </div>
+      </li>
+      <li>
+        <div class="box">
+          <figure>
+            <img src="img/pizza-especial-de-jamon.jpg" alt="Pizza de Jamon y Morron"> 
+            <figcapcha>
+              <h3>Pizza De Jamon y Morron</h3>
+              <p>$2650</p>
+              <time>10/07/2023</time><br>
+              <button class="button"value="7">Comprar Ahora <i class="fa-solid fa-cart-shopping"></i></button>
             </figcapcha>
 
             </img>
@@ -157,7 +175,21 @@
   <footer>
     <h6>&copy;2023</h6>
   </footer>
+  
   <script src="js/main.js"></script>
+  <script>
+  const countButtons=document.querySelectorAll("button").length;
+    for(i=0;i<countButtons;i++){
+    document.querySelectorAll("button")[i].addEventListener("click",showValue);
+    }
+    function showValue(){
+        let products=[];
+        products.push(this.value);
+        alert(products);
+    }
+    </script>
+
+  
 </body>
 
 </html>
