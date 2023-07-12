@@ -67,7 +67,7 @@
     </div>
   </header>
   <div class="main-content">
-    <h2>NUESTAS PIZZAS</h2>
+    <h2>NUESTRAS PIZZAS</h2>
     <ul class="gallery">
       <li>
         <div class="box">
@@ -172,30 +172,13 @@
       </li>
     </ul>
   </div>
-  <footer>
+  <footer >
+     <a href="login.html">Area Privada</a> 
     <h6>&copy;2023</h6>
   </footer>
   
   <script src="js/main.js"></script>
-  <script>
-  const countButtons=document.querySelectorAll("button").length;
-  let products=[];
-    for(i=0;i<countButtons;i++){
-    document.querySelectorAll("button")[i].addEventListener("click",showValue);
-    }
-    function showValue(){
-        
-        
-        
-        if((this.value==4)||(this.value==5)){
-          products.push(this.value+" Promo");
-        }
-        else{products.push(this.value); }
-        alert(products);
-
-
-    }
-    </script>
+  
 
   
 </body>
