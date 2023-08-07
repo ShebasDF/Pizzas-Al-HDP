@@ -11,13 +11,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
   
 
 </head>
 
 <body>
   <div class="container d-flex align-items-center justify-content-center vh-100">
-    <form class="form-sigin">
+    <form class="form-sigin" action="login.php" method="post" accept-charset="UTF-8">
       <div class="icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 640 512">
           <path fill="currentColor"
@@ -25,9 +28,9 @@
         </svg>
       </div>
       <h2>USUARIO</h2>
-      <input type="text" placeholder="usuario o email" required autofocus class="form-control"/>
+      <input type="text" placeholder="usuario o email" required autofocus class="form-control" name="username"/>
       <br />
-      <input type="password" placeholder="contraseña" required class="form-control"/><br>
+      <input type="password" placeholder="contraseña" required class="form-control" name="password"/><br>
       <div class="d-flex align-items-center justify-content-center"><button class="btn btn-primary btn-lg btn-black ">login</button>
       </div>
     </form>
