@@ -12,3 +12,5 @@ CREATE TABLE USERS(id_user int(11) not null AUTO_INCREMENT PRIMARY KEY,
                    password  char(64) not null,
                    email varchar(80) not null,
                    active ENUM ("si","no") DEFAULT "si") ENGINE=INNODB DEFAULT charset=utf8mb4 COLLATE utf8mb4_general_ci;
+
+                  alter table users add column created_at timestamp;  (este comando edita la relacion agregando una columna) 
