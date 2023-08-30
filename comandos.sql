@@ -37,23 +37,5 @@ select username active from users;(muestra los usuarios de active)
 select upper(USERNAME), active from users;(los usuarios en mayuscula)
 
 
-INSERT into users VALUES (null,'pepe',sha2('abcde',256),'pepe@gmail.com','no','21-08-24');  
-o
--------------------------(null,-----,------------------,----------------,null,null);                          
- 
+INSERT into users VALUES (null,'pepe',sha2('abcde',256),'pepe@gmail.com','no','21-08-24');
 
-SELECT * FROM users WHERE username like 'maria%' ==== esto busca en la fila "username" los usuarios con las letras del parametro Like el "%" señala los caracteres que no tenemos 
- 
-SELECT * FROM users WHERE NOT username='maria'; //filtra sin mostrar las filas que se piden//
-
-SELECT * FROM users WHERE id_user=1 OR id_user=2;
-
-SELECT * FROM users WHERE PASSWORD=sha2("123456",256);    
-
-SELECT * FROM users WHERE (username='maria') AND (PASSWORD=sha2('123456',256));  
-                
-SELECT * FROM users WHERE ((username='maria') OR (email='maria@gmail.com')) AND (PASSWORD=sha2('123456',256));
-
-SELECT * FROM users WHERE ((username='maria') OR (email='maria@gmail.com')) AND (PASSWORD=sha2('123456',256)) AND (active="si");
-
-SELECT COUNT(*) FROM users WHERE ((username='maria') OR (email='maria@gmail.com')) AND (PASSWORD=sha2('123456',256)) AND (active="si");
