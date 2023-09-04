@@ -1,10 +1,7 @@
 <?php
-$usr=$_POST["username"];
-$pass=$_POST["password"];
-if(((strcmp($usr,"maria")==0)||(strcmp($usr,"maria@twitter.com"))==0)&&(strcmp($pass,"123456")==0)){?><h1>Bienvenido</h1><?php }
-else{?>
-    <h1>Error</h1>
-<?php
-}
+include_once("config_login.php");
+$PDO = new PDO("mysql:host =".SERVER_NAME.";dbname =".DATABASE_NAME,USER_NAME, PASSWORD);
+echo "conexion exitosa";
+
 ?>
 
